@@ -16,15 +16,10 @@
     <title>yuhang lu</title>
 
     <meta charset="utf-8">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
-
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="keyboard" content="yuhang">
+    <meta name="keyboard" content="yuhang, yuhanglu, 7luyuhang">
+
+    <link rel="icon" type="image/svg" href="styles/image/favicon.svg">
 
     <style>
 
@@ -32,58 +27,74 @@
         box-sizing: border-box;
     }
     
-    .box {
-        float: left;
-        width: 50%;
-        padding: 1em;
+    @font-face {
+        font-family: 'Berkeley Mono';
+        src: url(styles/font/BerkeleyMono-Regular.woff2);
     }
 
     body {
-        background-color:transparent;
-        font-family: 'Space Grotesk', sans-serif;
+        font-family: 'Berkeley Mono', monospace;
         font-size: 1em;
         color: black;
-    }
-
-    .subtitle {
-        background-color: transparent;
-        font-family: 'Space Mono', monospace;
-        font-size: 0.5em;
-        color: grey;
-        text-transform: uppercase;
-        padding-top: 1em;
     }
 
     a {
         color: black;
         text-decoration: underline;
     }
+    
+    a:hover {
+        color: white;
+        background-color: black;
+    }
+
+    .column {
+        float: left;
+        width: 50%;
+        padding: 1em;
+    }
+
+    .subtitle {
+        background-color: transparent;
+        font-family: 'Berkeley Mono', monospace;
+        font-size: 0.7em;
+        color: grey;
+        text-transform: uppercase;
+        padding-top: 0.7em;
+    }
 
     .title {
         padding-left: 1em;
         padding-top: 1em;
     }
+
+    .footer {
+        position: absolute;
+        bottom: 1em;
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+
     </style>
     
 </head>
 
-<p class="title">yuhang lu</p>
 
-<div class="box">
+<p class="title">● yuhang lu</p>
+
+<div class="column">
     <p>Think Different.</p>
-    <p>b. 1997, China. Based in London, United Kingdom.</p>
+    <p>B. 1997, China. Based in London, United Kingdom.</p>
 
     <a href="mailto:7luyuhang@gmail.com">Email</a> ·
     <a href="https://read.cv/7luyuhang">Resume</a> ·
     <a href="https://dribbble.com/7ahang">Dribbble</a> ·
-    <a href="https://www.instagram.com/7luyuhang/">Instagram</a><br>
-
-    <br><p>Copyright &copy; luyuhang.net. All rights reserved.</p>
+    <a href="https://www.instagram.com/7luyuhang/">Instagram</a>
 </div>
 
-<div class="box">
-    <p class="subtitle">Projects</p>
 
+<div class="column">
+    <p class="subtitle">Projects</p>
     <a href="https://nothing.tech/pages/phone-1">Nothing OS</a> ·
     <a href="https://play.google.com/store/apps/details?id=com.nothing.smartcenter">ear (1) app</a> ·
     <a href="https://semi.design/en-US/">Semi Design</a>
@@ -94,5 +105,8 @@
     <a href="https://www.oppo.com/en/accessories/oppo-watch/">OPPO Watch Face</a>
 </div>
 
+<div class="footer">
+    <p>&copy; 2023 yuhang lu.</p>
+</div>
 
 </html>
