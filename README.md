@@ -1,2 +1,1 @@
-# luyuhang.net
-yuhang's website
+luyuhang.net
