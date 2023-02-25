@@ -2,18 +2,6 @@
 <html lang="en">
 
 <head>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-SW0XLHNEPV"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-SW0XLHNEPV');
-</script>
-
-<script defer src="/_vercel/insights/script.js"></script>
-
     <title>yuhang lu</title>
 
     <meta charset="utf-8">
@@ -40,6 +28,8 @@
     a {
         color: black;
         text-decoration: underline;
+        position: relative;
+        display: inline-block;
     }
     
     a:hover {
@@ -47,6 +37,34 @@
         background-color: black;
     }
 
+    .a1:hover::before {
+        content: "";
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 50vh;
+        height: 50vh;
+        background-image: url("styles/image/NothingOS_Clock.png");
+        background-size: cover;
+        background-position: center;
+        z-index: -1;
+    }
+
+    .a2:hover::before {
+        content: "";
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 50vh;
+        height: 50vh;
+        background-image: url("styles/image/ear_\(1\)_App.png");
+        background-size: cover;
+        background-position: center;
+        z-index: -1;
+    }
+   
     .column {
         float: left;
         width: 50%;
@@ -69,7 +87,20 @@
         padding-left: 1em;
         padding-top: 1em;
     }
-    </style>  
+    </style>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SW0XLHNEPV"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-SW0XLHNEPV');
+</script>
+
+<script defer src="/_vercel/insights/script.js"></script>
+
 </head>
 
 <p class="headline">● yuhang lu</p>
@@ -80,8 +111,8 @@
 
     <a href="mailto:7luyuhang@gmail.com" target="_blank">Email</a> ·
     <a href="https://read.cv/7luyuhang" target="_blank">Resume</a> ·
-    <a href="https://dribbble.com/7ahang" target="_blank">Dribbble</a> ·
-    <a href="https://www.instagram.com/7luyuhang/" target="_blank">Instagram</a><br>
+    <a href="https://dribbble.com/7ahang" target="_blank">Concept</a> ·
+    <a href="https://www.instagram.com/7ahang/" target="_blank">Photo</a><br>
 
     <br><p>&copy; 2023 yuhang lu.</p>
 </div>
@@ -89,12 +120,13 @@
 
 <div class="column">
     <p class="subtitle">Projects</p>
+
     <p class="line">
-        2021 <a href="https://nothing.tech/pages/phone-1" target="_blank">Nothing OS</a>
+        2021 <a class="a1" href="https://nothing.tech/pages/phone-1" target="_blank">Nothing OS</a>
     </p>
 
     <p class="line">
-        2021 <a href="https://play.google.com/store/apps/details?id=com.nothing.smartcenter" target="_blank">ear (1) app</a>
+        2021 <a class="a2" href="https://play.google.com/store/apps/details?id=com.nothing.smartcenter" target="_blank">ear (1) app</a>
     </p>
 
     <p class="line">
