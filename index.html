@@ -24,14 +24,12 @@
         src: url(styles/font/BerkeleyMono-Regular.woff2);
     }
 
+
     body {
         font-family: 'Berkeley Mono', monospace;
         font-size: 1em;
         color: black;
-    }
-
-    .footer {
-        padding-top: 1em;
+        background-color: white;
     }
 
     a {
@@ -42,6 +40,25 @@
     a:hover {
         color: white;
         background-color: black;
+    }
+
+    @media (prefers-color-scheme: dark) {
+        body {
+        font-family: 'Berkeley Mono', monospace;
+        font-size: 1em;
+        color: white;
+        background-color: black;
+    }
+
+    a {
+        color: white;
+        text-decoration: underline;
+    }
+    
+    a:hover {
+        color: black;
+        background-color: white;
+    }
     }
 
     .a1:hover::before {
@@ -66,7 +83,7 @@
         transform: translate(-50%, -50%);
         width: 50vh;
         height: 50vh;
-        background-image: url("styles/image/Camera_App.png");
+        background-image: url("styles/image/NothingOS_Camera.png");
         background-size: cover;
         background-position: center;
         z-index: -1;
@@ -108,6 +125,10 @@
         text-transform: uppercase;
         padding-top: 0.7em;
     }
+
+    .footer {
+        padding-top: 1em;
+    }
     </style>
 
 <!-- Google tag (gtag.js) -->
@@ -121,6 +142,16 @@
 </script>
 
 <script defer src="/_vercel/insights/script.js"></script>
+
+<script>
+    const prefersDarkMode = window.matchMedia("(prefers-color-scheme: dark)");
+
+if (prefersDarkMode.matches) {
+  document.documentElement.classList.add("dark-mode");
+} else {
+  document.documentElement.classList.remove("dark-mode");
+}
+</script>
 
 </head>
 
