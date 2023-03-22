@@ -1,0 +1,115 @@
+    * {
+        box-sizing: border-box;
+    }
+    
+    @font-face {
+        font-family: 'Berkeley Mono';
+        src: url(styles/font/BerkeleyMono-Regular.woff2);
+        font-display: swap;
+    }
+
+
+    body {
+        font-family: 'Berkeley Mono', monospace;
+        font-size: 1em;
+        color: black;
+        background-color: white;
+    }
+
+    a {
+        color: black;
+        text-decoration: underline;
+    }
+    
+    a:hover {
+        color: white;
+        background-color: black;
+    }
+
+    @media (prefers-color-scheme: dark) {
+        body {
+        font-family: 'Berkeley Mono', monospace;
+        font-size: 1em;
+        color: white;
+        background-color: black;
+    }
+
+    a {
+        color: white;
+        text-decoration: underline;
+    }
+    
+    a:hover {
+        color: black;
+        background-color: white;
+    }
+    }
+
+    .a1:hover::before {
+        content: "";
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 50vh;
+        height: 50vh;
+        background-image: url("styles/image/NothingOS_Clock.png");
+        background-size: cover;
+        background-position: center;
+        z-index: -1;
+    }
+
+    .a2:hover::before {
+        content: "";
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 50vh;
+        height: 50vh;
+        background-image: url("styles/image/NothingOS_Camera.png");
+        background-size: cover;
+        background-position: center;
+        z-index: -1;
+    }
+
+    .a3:hover::before {
+        content: "";
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 50vh;
+        height: 50vh;
+        background-image: url("styles/image/ear_\(1\)_App.png");
+        background-size: cover;
+        background-position: center;
+        z-index: -1;
+    }
+   
+    .column {
+        float: left;
+        width: 50%;
+        padding: 1em;
+    }
+
+    .line {
+        width: 100%;
+    }
+
+    .headline {
+        padding-left: 1em;
+        padding-top: 1em;
+    }
+
+    .subtitle {
+        font-family: 'Berkeley Mono', monospace;
+        font-size: 0.7em;
+        color: grey;
+        text-transform: uppercase;
+        padding-top: 0.8em;
+    }
+
+    .footer {
+        padding-top: 1em;
+    }
