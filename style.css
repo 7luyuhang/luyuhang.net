@@ -7,7 +7,6 @@
         src: url(styles/font/BerkeleyMono-Regular.woff2);
     }
 
-
     body {
         font-family: 'Berkeley Mono', monospace;
         font-size: 1em;
@@ -42,6 +41,36 @@
         color: black;
         background-color: white;
     }
+
+    .a3:hover::before {
+        content: "";
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 50vh;
+        height: 50vh;
+        background-image: url("styles/image/ear_\(1\)_App_Dark.png");
+        background-size: cover;
+        background-position: center;
+        z-index: -1;
+    }
+    }
+
+    @media (prefers-color-scheme: light) {
+        .a3:hover::before {
+            content: "";
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 50vh;
+            height: 50vh;
+            background-image: url("styles/image/ear_\(1\)_App_Light.png");
+            background-size: cover;
+            background-position: center;
+            z-index: -1;
+        }
     }
 
     .a1:hover::before {
@@ -67,20 +96,6 @@
         width: 50vh;
         height: 50vh;
         background-image: url("styles/image/NothingOS_Camera.png");
-        background-size: cover;
-        background-position: center;
-        z-index: -1;
-    }
-
-    .a3:hover::before {
-        content: "";
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 50vh;
-        height: 50vh;
-        background-image: url("styles/image/ear_\(1\)_App.png");
         background-size: cover;
         background-position: center;
         z-index: -1;
