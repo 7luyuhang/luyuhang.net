@@ -73,6 +73,20 @@
     }
     }
 
+    .a2:hover::before {
+        content: "";
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 50vh;
+        height: 50vh;
+        background-image: url("styles/image/NothingOS_Camera.png");
+        background-size: cover;
+        background-position: center;
+        z-index: -1;
+    }
+
     .a1:hover::before {
         content: "";
         position: fixed;
@@ -87,7 +101,7 @@
         z-index: -1;
     }
 
-    .a2:hover::before {
+    .a0:hover::before {
         content: "";
         position: fixed;
         top: 50%;
@@ -95,11 +109,27 @@
         transform: translate(-50%, -50%);
         width: 50vh;
         height: 50vh;
-        background-image: url("styles/image/NothingOS_Camera.png");
+        background-image: url("styles/image/NothingOS_2.0_Dark.png");
         background-size: cover;
         background-position: center;
         z-index: -1;
     }
+
+    @media (prefers-color-scheme: light) {
+        .a0:hover::before {
+            content: "";
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 50vh;
+            height: 50vh;
+            background-image: url("styles/image/NothingOS_2.0_Light.png");
+            background-size: cover;
+            background-position: center;
+            z-index: -1;
+        }
+        }
    
     .column {
         float: left;
