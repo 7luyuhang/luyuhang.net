@@ -146,12 +146,19 @@
         padding-top: 1em;
     }
 
-    .subtitle {
+    .subtitle_1 {
         font-family: 'Berkeley Mono', monospace;
-        font-size: 0.7em;
+        font-size: 1em;
         color: grey;
         text-transform: uppercase;
-        padding-top: 0.8em;
+    }
+
+    .subtitle_2 {
+        font-family: 'Berkeley Mono', monospace;
+        font-size: 1em;
+        color: grey;
+        text-transform: uppercase;
+        padding-top: 1em;
     }
 
     .footer {
