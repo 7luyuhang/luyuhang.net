@@ -12,6 +12,7 @@
         body {
             font-family: 'Berkeley Mono', monospace;
             font-size: 1em;
+            line-height: 1.5;
             color: black;
             background-color: white;
         }
@@ -60,6 +61,7 @@
     body {
         font-family: 'Berkeley Mono', monospace;
         font-size: 1em;
+        line-height: 1.5;
         color: white;
         background-color: black;
     }
