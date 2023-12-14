@@ -1,31 +1,5 @@
 // main.js
 
-// Google tag (gtag.js)
-(function () {
-  const script = document.createElement('script');
-  script.async = true;
-  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-SW0XLHNEPV';
-  document.head.appendChild(script);
-
-  script.onload = function () {
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-    gtag('config', 'G-SW0XLHNEPV');
-  };
-})();
-
-// Vercel Insights
-window.si = window.si || function () {
-  (window.siq = window.siq || []).push(arguments);
-};
-const vercelScript = document.createElement('script');
-vercelScript.defer = true;
-vercelScript.src = '/_vercel/speed-insights/script.js';
-document.head.appendChild(vercelScript);
-
 // Theme
 (function () {
   const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)');
