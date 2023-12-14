@@ -9,69 +9,14 @@
 
     <link rel="icon" href="styles/image/favicon.png" type="png">
     <link rel="stylesheet" href="style.css">
+    <script defer src="main.js"></script>
+    
     <link rel="apple-touch-icon" href="styles/image/apple_touch_icon.png">
 
     <!-- Open Graph -->
     <meta property="og:title" content="yuhang lu">
     <meta property="og:description" content="Narrator">
     <meta property="og:image" content="https://github.com/7luyuhang/luyuhang.net/raw/698ccde1bf906cae97884be21b6b30ff9f945448/styles/image/OG_Image.png">
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-SW0XLHNEPV"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-SW0XLHNEPV');
-</script>
-
-<!-- Vercel Insights -->
-<script>
-    window.si = window.si || function () { (window.siq = window.siq || []).push(arguments); };
-  </script>
-  <script defer src="/_vercel/speed-insights/script.js"></script>
-
-<!-- Theme -->
-<script>
-    const prefersDarkMode = window.matchMedia("(prefers-color-scheme: dark)");
-
-if (prefersDarkMode.matches) {
-  document.documentElement.classList.add("dark-mode");
-} else {
-  document.documentElement.classList.remove("dark-mode");
-}
-</script>
-
-<!--Time-->
-<script>
-    function getLocalTime() {
-        const options = {
-            timeZone: 'Europe/London',
-            hour12: true,
-            hour: 'numeric',
-            minute: 'numeric',
-        };
-
-        const localTime = new Date().toLocaleTimeString('en-US', options);
-        return localTime;
-
-    }
-
-    function updateLocalTime() {
-        const localTimeElement = document.getElementById('localTime');
-        if (localTimeElement) {
-            const timeString = getLocalTime();
-            localTimeElement.textContent = timeString;
-        }
-    }
-
-    window.onload = function () {
-        updateLocalTime();
-    };
-
-    setInterval(updateLocalTime, 1000);
-</script>
 
 </head>
 
