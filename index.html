@@ -53,8 +53,7 @@ if (prefersDarkMode.matches) {
             minute: 'numeric',
         };
 
-        const formatter = new Intl.DateTimeFormat('en-US', options);
-        const localTime = formatter.format(new Date());
+        const localTime = new Date().toLocaleTimeString('en-US', options);
         return localTime;
     }
 
@@ -70,7 +69,7 @@ if (prefersDarkMode.matches) {
         updateLocalTime();
     };
 
-    setInterval(updateLocalTime, 100);
+    setInterval(updateLocalTime, 500);
 </script>
 
 </head>
