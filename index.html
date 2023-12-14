@@ -38,13 +38,47 @@ if (prefersDarkMode.matches) {
 }
 </script>
 
+<!--Time-->
+<script>
+    function getLocalTime() {
+        const options = {
+            timeZone: 'Europe/London',
+            hour12: true,
+            hour: 'numeric',
+            minute: 'numeric',
+        };
+
+        const localTime = new Date().toLocaleTimeString('en-US', options);
+        return localTime;
+    }
+
+    function updateLocalTime() {
+        const localTimeElement = document.getElementById('localTime');
+        if (localTimeElement) {
+            const timeString = getLocalTime();
+            localTimeElement.textContent = timeString;
+        }
+    }
+
+    window.onload = function () {
+        updateLocalTime();
+    };
+
+    setInterval(updateLocalTime, 1000);
+</script>
+
+
+<!--Content-->
 </head>
 
 <p class="headline">● yuhang lu</p>
 
 <div class="column">
     <p>Think Different.</p>
-    <p>B. 1997, China. Based in London, United Kingdom.</p>
+
+    <p class = "timeline">B. 1997, China. Based in London:</p>
+    <p class = "timeline" id="localTime" ></p>
+
     <p>Designing at Nothing.Tech.</p>
 
     <a href="mailto:7luyuhang@gmail.com" target="_blank">Email</a> ·
