@@ -53,8 +53,9 @@ if (prefersDarkMode.matches) {
             minute: 'numeric',
         };
 
-        const localTime = new Date().toLocaleTimeString('en-US', options);
+        const localTime = new Date().toLocaleTimeString('en-GB', options);
         return localTime;
+
     }
 
     function updateLocalTime() {
@@ -69,7 +70,7 @@ if (prefersDarkMode.matches) {
         updateLocalTime();
     };
 
-    setInterval(updateLocalTime, 500);
+    setInterval(updateLocalTime, 1000);
 </script>
 
 </head>
