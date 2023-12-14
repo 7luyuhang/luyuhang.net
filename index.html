@@ -10,15 +10,32 @@
     <link rel="icon" href="styles/image/favicon.png" type="png">
     <link rel="stylesheet" href="style.css">
     <script defer src="main.js"></script>
-    
+
     <link rel="apple-touch-icon" href="styles/image/apple_touch_icon.png">
 
     <!-- Open Graph -->
     <meta property="og:title" content="yuhang lu">
     <meta property="og:description" content="Narrator">
-    <meta property="og:image" content="https://github.com/7luyuhang/luyuhang.net/raw/698ccde1bf906cae97884be21b6b30ff9f945448/styles/image/OG_Image.png">
+    <meta property="og:image"
+        content="https://github.com/7luyuhang/luyuhang.net/raw/698ccde1bf906cae97884be21b6b30ff9f945448/styles/image/OG_Image.png">
 
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SW0XLHNEPV"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-SW0XLHNEPV');
+    </script>
+
+    <!-- Vercel Insights -->
+    <script>
+        window.si = window.si || function () { (window.siq = window.siq || []).push(arguments); };
+    </script>
+    <script defer src="/_vercel/speed-insights/script.js"></script>
 </head>
+
 
 <!--Content-->
 
@@ -27,8 +44,8 @@
 <div class="column">
     <p>Think Different.</p>
 
-    <p class = "timeline">B. 1997, China. Based in London:</p>
-    <p class = "timeline" id="localTime" ></p>
+    <p class="timeline">B. 1997, China. Based in London:</p>
+    <p class="timeline" id="localTime"></p>
 
     <p>Designing at Nothing.Tech.</p>
 
