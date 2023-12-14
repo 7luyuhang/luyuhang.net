@@ -53,7 +53,8 @@ if (prefersDarkMode.matches) {
             minute: 'numeric',
         };
 
-        const localTime = new Date().toLocaleTimeString('en-US', options);
+        const formatter = new Intl.DateTimeFormat('en-US', options);
+        const localTime = formatter.format(new Date());
         return localTime;
     }
 
