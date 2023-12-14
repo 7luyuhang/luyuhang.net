@@ -2,12 +2,13 @@
         box-sizing: border-box;
     }
     
+    /*Font*/
     @font-face {
         font-family: 'Berkeley Mono';
         src: url(styles/font/BerkeleyMono-Regular.woff2);
     }
 
-    /*light_mode*/
+    /*Light Mode*/
     @media (prefers-color-scheme: light) {
         body {
             font-family: 'Berkeley Mono', monospace;
@@ -69,7 +70,7 @@
         }
         }
 
-    /*dark_mode*/
+    /*Dark Mode*/
     @media (prefers-color-scheme: dark) {
     body {
         font-family: 'Berkeley Mono', monospace;
@@ -131,7 +132,7 @@
     }
     }
 
-    /*general*/
+    /*General*/
     .a4:hover::before {
         content: "";
         position: fixed;
@@ -174,6 +175,7 @@
         z-index: -1;
     }
    
+    /*Layout*/
     .column {
         float: left;
         width: 50%;
@@ -206,4 +208,9 @@
 
     .footer {
         padding-top: 1em;
+    }
+    
+    .timeline {
+        display: inline-block;
+        margin: 0;
     }
