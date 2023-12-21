@@ -27,8 +27,10 @@ function updateLocalTime() {
   const localTimeElement = document.getElementById('localTime');
   if (localTimeElement) {
     const timeString = getLocalTime();
-    localTimeElement.textContent = timeString;
+    const blinkingTimeString = timeString.replace(/:/g, '<span class="blink">:</span>');
+    localTimeElement.innerHTML = blinkingTimeString;
   }
+
 }
 
 window.onload = function () {
