@@ -1,7 +1,7 @@
     * {
         box-sizing: border-box;
     }
-    
+
     /*Font*/
     @font-face {
         font-family: 'Berkeley Mono';
@@ -16,12 +16,12 @@
             color: black;
             background-color: white;
         }
-    
+
         a {
             color: black;
             text-decoration: underline;
         }
-        
+
         a:hover {
             color: white;
             background-color: black;
@@ -68,68 +68,68 @@
             background-position: center;
             z-index: -1;
         }
-        }
+    }
 
     /*Dark Mode*/
     @media (prefers-color-scheme: dark) {
-    body {
-        font-family: 'Berkeley Mono', monospace;
-        font-size: 1em;
-        color: white;
-        background-color: black;
-    }
+        body {
+            font-family: 'Berkeley Mono', monospace;
+            font-size: 1em;
+            color: white;
+            background-color: black;
+        }
 
-    a {
-        color: white;
-        text-decoration: underline;
-    }
-    
-    a:hover {
-        color: black;
-        background-color: white;
-    }
+        a {
+            color: white;
+            text-decoration: underline;
+        }
 
-    .a5:hover::before {
-        content: "";
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 50vh;
-        height: 50vh;
-        background-image: url("styles/image/cmf_watch_face_dark.png");
-        background-size: cover;
-        background-position: center;
-        z-index: -1;
-    }
+        a:hover {
+            color: black;
+            background-color: white;
+        }
 
-    .a3:hover::before {
-        content: "";
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 50vh;
-        height: 50vh;
-        background-image: url("styles/image/ear_\(1\)_App_Dark.png");
-        background-size: cover;
-        background-position: center;
-        z-index: -1;
-    }
+        .a5:hover::before {
+            content: "";
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 50vh;
+            height: 50vh;
+            background-image: url("styles/image/cmf_watch_face_dark.png");
+            background-size: cover;
+            background-position: center;
+            z-index: -1;
+        }
 
-    .a0:hover::before {
-        content: "";
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 50vh;
-        height: 50vh;
-        background-image: url("styles/image/NothingOS_2.0_Dark.png");
-        background-size: cover;
-        background-position: center;
-        z-index: -1;
-    }
+        .a3:hover::before {
+            content: "";
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 50vh;
+            height: 50vh;
+            background-image: url("styles/image/ear_\(1\)_App_Dark.png");
+            background-size: cover;
+            background-position: center;
+            z-index: -1;
+        }
+
+        .a0:hover::before {
+            content: "";
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 50vh;
+            height: 50vh;
+            background-image: url("styles/image/NothingOS_2.0_Dark.png");
+            background-size: cover;
+            background-position: center;
+            z-index: -1;
+        }
     }
 
     /*General*/
@@ -174,7 +174,7 @@
         background-position: center;
         z-index: -1;
     }
-   
+
     /*Layout*/
     .column {
         float: left;
@@ -209,8 +209,26 @@
     .footer {
         padding-top: 1em;
     }
-    
+
     .timeline {
         display: inline-block;
         margin: 0;
+    }
+
+    /*Blinking Time*/
+    @keyframes blink {
+
+        0%,
+        50% {
+            opacity: 1;
+        }
+
+        51%,
+        100% {
+            opacity: 0;
+        }
+    }
+
+    .blink {
+        animation: blink 1s infinite;
     }
