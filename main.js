@@ -37,4 +37,4 @@ window.onload = function () {
   updateLocalTime();
 };
 
-setInterval(updateLocalTime, 1000);
+setInterval(updateLocalTime, 2000);
