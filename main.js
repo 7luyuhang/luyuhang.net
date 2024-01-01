@@ -1,5 +1,3 @@
-// main.js
-
 // Theme
 (function () {
   const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)');
@@ -38,3 +36,12 @@ window.onload = function () {
 };
 
 setInterval(updateLocalTime, 2000);
+
+// Footer
+var currentYear = new Date().getFullYear();
+
+var yearElement = document.getElementById('year');
+
+if (yearElement) {
+  yearElement.innerHTML = '&copy; ' + currentYear + ' yuhang lu.';
+}
