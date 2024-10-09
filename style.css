@@ -27,6 +27,7 @@
         background-color: black;
     }
 
+
     .a4:hover::before {
         content: "";
         position: fixed;
@@ -189,6 +190,20 @@
 }
 
 /*General*/
+.a9:hover::before {
+    content: "";
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50vh;
+    height: 50vh;
+    background-image: url("styles/image/NothingOS_3.0.png");
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
 .a7:hover::before {
     content: "";
     position: fixed;
