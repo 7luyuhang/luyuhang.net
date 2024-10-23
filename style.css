@@ -8,6 +8,18 @@
     src: url(styles/font/BerkeleyMono-Regular.woff2);
 }
 
+/* Key Animation */
+@keyframes fadeInBlur {
+    0% {
+        opacity: 0;
+        filter: blur(50px) brightness(5);
+    }
+    100% {
+        opacity: 1;
+        filter: blur(0) brightness(1);
+    }
+}
+
 /*Light Mode*/
 @media (prefers-color-scheme: light) {
     body {
@@ -40,6 +52,7 @@
         background-size: cover;
         background-position: center;
         z-index: -1;
+        animation: fadeInBlur 0.8s cubic-bezier(0.6, 0, 0, 1) forwards;
     }
 
     .a8:hover::before {
@@ -54,6 +67,7 @@
         background-size: cover;
         background-position: center;
         z-index: -1;
+        animation: fadeInBlur 0.8s cubic-bezier(0.6, 0, 0, 1) forwards;
     }
 
     .a5:hover::before {
@@ -68,6 +82,7 @@
         background-size: cover;
         background-position: center;
         z-index: -1;
+        animation: fadeInBlur 0.8s cubic-bezier(0.6, 0, 0, 1) forwards;
     }
 
     .a3:hover::before {
@@ -82,6 +97,7 @@
         background-size: cover;
         background-position: center;
         z-index: -1;
+        animation: fadeInBlur 0.8s cubic-bezier(0.6, 0, 0, 1) forwards;
     }
 
     .a0:hover::before {
@@ -96,6 +112,7 @@
         background-size: cover;
         background-position: center;
         z-index: -1;
+        animation: fadeInBlur 0.8s cubic-bezier(0.6, 0, 0, 1) forwards;
     }
 }
 
@@ -130,6 +147,7 @@
         background-size: cover;
         background-position: center;
         z-index: -1;
+        animation: fadeInBlur 0.8s cubic-bezier(0.6, 0, 0, 1) forwards;
     }
 
     .a8:hover::before {
@@ -144,6 +162,7 @@
         background-size: cover;
         background-position: center;
         z-index: -1;
+        animation: fadeInBlur 0.8s cubic-bezier(0.6, 0, 0, 1) forwards;
     }
 
     .a5:hover::before {
@@ -158,6 +177,7 @@
         background-size: cover;
         background-position: center;
         z-index: -1;
+        animation: fadeInBlur 0.8s cubic-bezier(0.6, 0, 0, 1) forwards;
     }
 
     .a3:hover::before {
@@ -172,6 +192,7 @@
         background-size: cover;
         background-position: center;
         z-index: -1;
+        animation: fadeInBlur 0.8s cubic-bezier(0.6, 0, 0, 1) forwards;
     }
 
     .a0:hover::before {
@@ -186,6 +207,7 @@
         background-size: cover;
         background-position: center;
         z-index: -1;
+        animation: fadeInBlur 0.8s cubic-bezier(0.6, 0, 0, 1) forwards;
     }
 }
 
@@ -202,6 +224,7 @@
     background-size: cover;
     background-position: center;
     z-index: -1;
+    animation: fadeInBlur 0.8s cubic-bezier(0.6, 0, 0, 1) forwards;
 }
 
 .a7:hover::before {
@@ -216,6 +239,7 @@
     background-size: cover;
     background-position: center;
     z-index: -1;
+    animation: fadeInBlur 0.8s cubic-bezier(0.6, 0, 0, 1) forwards;
 }
 
 .a6:hover::before {
@@ -230,6 +254,7 @@
     background-size: cover;
     background-position: center;
     z-index: -1;
+    animation: fadeInBlur 0.8s cubic-bezier(0.6, 0, 0, 1) forwards;
 }
 
 .a2:hover::before {
@@ -244,6 +269,7 @@
     background-size: cover;
     background-position: center;
     z-index: -1;
+    animation: fadeInBlur 0.8s cubic-bezier(0.6, 0, 0, 1) forwards;
 }
 
 .a1:hover::before {
@@ -258,6 +284,7 @@
     background-size: cover;
     background-position: center;
     z-index: -1;
+    animation: fadeInBlur 0.8s cubic-bezier(0.6, 0, 0, 1) forwards;
 }
 
 /*Layout*/
