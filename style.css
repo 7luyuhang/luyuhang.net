@@ -213,6 +213,23 @@
 }
 
 /*General*/
+
+.a10:hover::before {
+    content: "";
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50vh;
+    height: 50vh;
+    background-image: url("styles/image/Essential_Space.png");
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    animation: fadeInBlur 0.8s cubic-bezier(0.6, 0, 0, 1) forwards;
+}
+
+
 .a9:hover::before {
     content: "";
     position: fixed;
